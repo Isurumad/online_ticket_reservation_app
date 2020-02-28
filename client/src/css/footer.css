@@ -1,0 +1,115 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.container-fluid{
+    display: grid;
+    grid-template-rows: 15% 70% 15%;
+}
+.footer-wrapper{
+    width:100%;
+    height:auto;
+    min-height: 250px;
+    margin:auto;
+    margin-top: 50px;
+    background-image: url('../images/footer.png');
+    background-position: center;
+    background-repeat: no-repeat ;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.footer-social-icons h1{
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-social-icons{
+    height: 25%;
+}
+
+.info-wrapper{
+    height:75%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-top:20px;
+    padding-bottom: 20px;
+}
+
+.info-wrapper h1{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.info-wrapper .contactus-info li{
+    color: white;
+    padding-top:5px;
+    padding-bottom: 5px;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 5px;;
+}
+
+.info-wrapper .quicklink-info li{
+    color:white;
+    list-style-type: none;
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    
+}
+
+.info-wrapper .ourservices-info li{
+    color:white;
+    list-style-type: none;
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+
+.getintouch input{
+    padding:5px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    background: none;
+    color: white;
+    border:none;
+    border-bottom: solid 2px rgb(90, 87, 87);
+    width: 80%;
+} 
+
+.getintouch button{
+    padding-left:25px;
+    padding-right:25px;
+    padding-bottom:5px;
+    padding-top: 5px;
+    margin-left: 15px;
+    margin-top: 10px;
+    background: red;
+    border:none;
+    color: white;
+    cursor: pointer;
+    border-radius: 0.25em;
+}
+
+.getintouch button:hover{
+    background:darkblue;
+}
+
+.copyright{
+    color:rgb(148, 137, 137);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: solid 1px rgb(148, 137, 137);
+}
