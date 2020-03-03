@@ -16,7 +16,7 @@ import {setArrivalFilter,
                         <Row form>
                             <Col md={3}>
                             <FormGroup>
-                                <Label >Arrival Station</Label>
+                                <Label >Service Type</Label>
                                 <Input type="text"  id="arrival" value={this.props.filter.arrival} onChange={(e)=>{
                                     this.props.dispatch(setArrivalFilter(e.target.value));
                                 }}/>
@@ -24,7 +24,7 @@ import {setArrivalFilter,
                             </Col>
                             <Col md={3}>
                             <FormGroup>
-                                <Label >Departure Station</Label>
+                                <Label >Price</Label>
                                 <Input type="text" id="destination" value={this.props.filter.destination} onChange={(e)=>{
                                     this.props.dispatch(setDestinationFilter(e.target.value));
                                 }}/>
@@ -32,7 +32,7 @@ import {setArrivalFilter,
                             </Col>
                             <Col md={3}>
                             <FormGroup>
-                                <Label>Train Name</Label>
+                                <Label>Location</Label>
                                 <Input type="text"id="destination" value={this.props.filter.trainName} onChange={(e)=>{
                                     this.props.dispatch(setNameFilter(e.target.value));
                                 }}/>
@@ -40,7 +40,7 @@ import {setArrivalFilter,
                             </Col>
                             <Col md={3}>
                             <FormGroup>
-                                <Label>Train Type</Label>
+                                <Label>Condition</Label>
                                 <Input type="text"  id="type"value={this.props.filter.trainType} onChange={(e)=>{
                                     this.props.dispatch(setTypeFilter(e.target.value));
                                 }}/>

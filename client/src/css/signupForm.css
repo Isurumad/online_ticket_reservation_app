@@ -5,7 +5,7 @@
 
 }
 
-#signup-form Input{
+#signup-form Row Input{
     width: 500px;
     margin-top: 20px;
     color: black;
@@ -32,4 +32,9 @@
 h1{
     margin-bottom: 20px;
     color: floralwhite;
+}
+
+#check-box{
+    padding-bottom:10px;
+    color: blanchedalmond;
 }

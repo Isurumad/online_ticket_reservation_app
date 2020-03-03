@@ -1,22 +1,25 @@
 import React from 'react';
-import { Media,CardImg } from 'reactstrap';
+import {
+  Card, CardImg, CardText, CardBody,
+  CardTitle, CardSubtitle, Button
+} from 'reactstrap';
+
 import '../css/mostVisitItem.css'
 
 
 const MostVisitItem = (props) => {
   return (
-    <Media id='card'>
-      <Media left href="#">
-        <CardImg id='card-image' top src={props.place.image} alt="Card image cap" />
-      </Media>
-      <Media body id='card-body'>
-        <Media heading>
-            {props.place.title}
-        </Media>
-            {props.place.description}
-            <a href="http://www.google.lk">  More Info....</a>
-      </Media>
-    </Media>
+    <div>
+      <Card id='mst-card'>
+        <CardImg id='card-image' src={props.place.image} alt="Card image cap" />
+        <CardBody>
+          <CardTitle className='card-title'>{props.place.title}</CardTitle>
+          <CardSubtitle className='card-location' >Location : {props.place.location}</CardSubtitle>
+          <CardText id='description'>{props.place.description}</CardText>
+          <Button color="success">More Info..</Button>
+        </CardBody>
+      </Card>
+    </div>
   );
 };
 

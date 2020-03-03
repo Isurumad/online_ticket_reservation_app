@@ -63,8 +63,8 @@ const Header =(props)=>{
             </NavItem>
             
           </Nav>
-          <ButtonToggle href='/schedules' color="success">BOOK TICKETS</ButtonToggle>
-          <ButtonToggle color="success">POST ADVERTISTMENT</ButtonToggle>
+          <ButtonToggle id='nav-button' href='/schedules' color="success">BOOK TICKETS</ButtonToggle>
+          <ButtonToggle id='nav-button' href='/addform' color="success">POST ADVERTISTMENT</ButtonToggle>
 
         </Collapse>
 

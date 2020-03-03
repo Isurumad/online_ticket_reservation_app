@@ -1,0 +1,9 @@
+#container{
+    background-image: url('../images/footer.png');
+    padding:50px;
+    font-weight: bold;
+    color: blanchedalmond;
+}
+#form-head{
+    margin-bottom: 30px;
+}

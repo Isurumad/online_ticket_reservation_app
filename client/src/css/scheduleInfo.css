@@ -1,0 +1,29 @@
+#schedule-head{
+    color: black;
+    margin-left: 100px;
+    color: blanchedalmond;
+}
+
+#sch-img{
+    width:500px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+#info-container{
+    background-color: rgb(27, 27, 27);
+}
+
+#card-body{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#info{
+    color: blanchedalmond;
+    margin-top: 100px;
+}
+
+#ticket{
+    margin-top: 10px;
+}

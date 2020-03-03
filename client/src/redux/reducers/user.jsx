@@ -1,6 +1,6 @@
 
 const userReducerDefaultStat={
-    users:[{firstName:"test name"}],
+    users:[],
     loading:false
 };
 

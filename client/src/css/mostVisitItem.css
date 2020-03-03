@@ -1,29 +1,40 @@
+#mst-card{
+    background-color: rgb(77, 74, 74);
+    padding-top: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 0.5em;
+    box-shadow: rgb(46, 45, 45) 5px 5px;
+
+}
+
 #card-image{
     width: 350px;
-    border-radius: 0.5em;
-    border: solid black 1px;
-    padding:3px
+    border:2px solid black;
+    border-radius: 0.3em;
+    padding: 5px;
+    position: relative;
+    top:18%;
+    
 }
 
-h1{
-    margin-top: 20px;
-    text-align: center;
-    font-family: fantasy;
+.card-title{
+    font-size: 30px;
+    color: blanchedalmond;
+    
 }
 
-#card{
-    background-color: rgb(206, 207, 204);
-    padding:10px;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-top: 25px;
-    border: 1px solid black;
-    border-radius: 0.5em;
-    box-shadow: 5px 8px #888888;
-
+.card-location{
+    color:white;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
-#card-body{
-    margin:20px;
+#description{
+    color: white;
 }
-

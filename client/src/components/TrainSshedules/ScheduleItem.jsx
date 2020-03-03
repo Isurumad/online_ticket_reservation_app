@@ -13,7 +13,7 @@ const ScheduleItem = (props) => {
             <td>{props.schedule.frequency}</td>
             <td>{props.schedule.name}</td>
             <td>{props.schedule.trainType}</td>
-            <td><ButtonToggle color="success">Reserve</ButtonToggle></td>
+            <td><ButtonToggle href='/scheduleinfo' color="success">Book</ButtonToggle></td>
         </tr>
     </tbody>
   );

@@ -7,7 +7,6 @@ class Footer extends Component{
             <div className = 'footer-wrapper'>
                 <div className="container-fluid">
                     <div className="footer-social-icons">
-                        <h1>Logo Here</h1>
                     </div>
                     <div className='info-wrapper'>
                         <div className="contactus">
@@ -53,12 +52,11 @@ class Footer extends Component{
                                 </div>
                         </div>
                         <div className="getintouch">
-                                <h1>GET IN TOUCH</h1>
+                                <h1>ADMIN LOGIN</h1>
                                 <form action="#">
-                                    <input type="text" name='name' placeholder='Name'/><br/>
                                     <input type="text" name='email' placeholder='Email'/><br/>
-                                    <input type="text" name='number' placeholder='Phone Number'/><br/>
-                                    <button>SUBMIT</button>
+                                    <input type="text" name='number' placeholder='Password'/><br/>
+                                    <button>LOG IN</button>
                                 </form>
                         </div>
                     </div>

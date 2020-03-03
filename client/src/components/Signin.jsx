@@ -23,7 +23,7 @@ class Signin extends React.Component{
                         </FormGroup>
                     </Col>
                     </Row>
-                <Button id ='signup-button'>Sign up</Button>
+                <Button id ='signup-button'>Sign In</Button>
             </Form>
         </div> 
                 

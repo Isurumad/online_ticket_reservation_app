@@ -11,6 +11,9 @@ import Img1 from '../images/carosal_1.jpg'
 import Img2 from '../images/carosal_2.jpg'
 import Img3 from '../images/carosal_3.jpg'
 import Img4 from '../images/carosal_4.jpg'
+import Img5 from '../images/carosal_5.jpg'
+import Img6 from '../images/carosal_6.jpg'
+
 
 const items = [
   {  
@@ -36,7 +39,21 @@ const items = [
     image:Img4,
     altText: 'Heigh Quality Trains',
     caption: 'Sri Lanka'
+  },
+  {
+    id: 5,
+    image:Img5,
+    altText: 'Heigh Quality Trains',
+    caption: 'Sri Lanka'
+  },
+
+  {
+    id: 6,
+    image:Img6,
+    altText: 'Heigh Quality Trains',
+    caption: 'Sri Lanka'
   }
+  
 ];
 
 const Carosal = (props) => {
