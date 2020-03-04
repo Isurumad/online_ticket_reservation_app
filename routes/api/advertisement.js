@@ -7,16 +7,6 @@ router.get('/',(req,res)=>{
     Advertisement.find().then((add)=>res.json(add));
 });
 
-router.route('/advertisement').get((req,res)=>{
-    Advertisement.find((err,advertisement)=>{
-        if(err){
-            console.log(err);
-        }else{
-            console.log('No Errors');
-            res.json(advertisement);
-        }
-    })
-})
 
 router.post('/',(req,res)=>{
     const newAdd = new Advertisement({
@@ -29,4 +19,10 @@ router.post('/',(req,res)=>{
 
     newAdd.save().then(add=>res.json(add)).catch((e)=>res.status(400).send('Failed'))
 })
+
+router.post('/',(req,res)=>{
+    res.send('register');
+})
+
+module.exports = router;
 
