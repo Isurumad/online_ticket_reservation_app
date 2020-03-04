@@ -13,6 +13,10 @@ constructor(props){
         password:'',
         confirmPassword:'',
         error:'',
+        loginType:'',
+        cpmpanyName:'',
+        contact:'',
+        address:'',
         isLogin:false
     }
 }
@@ -46,6 +50,12 @@ onConfirmPasswordChange=(e)=>{
     const confirmPassword = e.target.value;
     this.setState(()=>({confirmPassword}))
 }
+
+onTypeChange=(e)=>{
+ const type = e.target.value;
+     console.log(type);
+     this.setState(()=>({type}));
+}
 onSubmit=(e)=>{
     e.preventDefault()
     if(!this.state.firstName || !this.state.lastName || !this.state.email){
@@ -60,13 +70,11 @@ onSubmit=(e)=>{
             lastName:this.state.lastName,
             email:this.state.email,
             password:this.state.password
-        })
+        });
     }
 }
 
 render(){
-    
-  
     return(
     <div id='page-body'>
     <Form id='signup-form' onSubmit={this.onSubmit}>
@@ -107,24 +115,19 @@ render(){
             </FormGroup>
             </Col>
         </Row>
-        {/* <Row form>
+        <Row form>
             <Col md={6}>
-            <FormGroup check inline>
-        <Label id='check-box' check>
-          <Input type="checkbox" /> Signup As Passenger
-        </Label>
-      </FormGroup>
-      <FormGroup check inline>
-        <Label id='check-box' check>
-           <Input type="checkbox" /> Signup As Service Provider
-        </Label>
-      </FormGroup>
+                <Input type="select" onChange={this.onTypeChange}>
+                <option>Passenger</option>
+                <option>Service Provider</option>
+                </Input>
             </Col>
         </Row>
+        <div>
         <Row form>
             <Col md={6}>
             <FormGroup>
-                <Input type="password" name="con-password" id="con-password" placeholder="Company Name" value={this.state.confirmPassword} onChange={this.onConfirmPasswordChange} />
+                <Input type="text" name="company-name" id="c-name" placeholder="Company Name" value={this.state.confirmPassword} onChange={this.onConfirmPasswordChange} />
             </FormGroup>
             </Col>
         </Row>
@@ -141,7 +144,8 @@ render(){
                 <Input type="password" name="con-password" id="con-password" placeholder="Official Conatct Number" value={this.state.confirmPassword} onChange={this.onConfirmPasswordChange} />
             </FormGroup>
             </Col>
-        </Row> */}
+        </Row>
+        </div>
         {this.state.error && <p id='error'>{this.state.error}</p>}
         
         <Button id ='signup-button'>Sign up</Button>

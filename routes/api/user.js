@@ -22,7 +22,8 @@ router.post('/',(req,res)=>{
     const newUser = new User({
         firstName:req.body.firstName,
         lastName:req.body.lastName,
-        email:req.body.email
+        email:req.body.email,
+        password:req.body.password
     });
     newUser.save().then(user=>res.json(user)).catch((e)=>res.status(400).send('Failed'));
 })

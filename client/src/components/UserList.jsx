@@ -22,11 +22,6 @@ class UserList extends React.Component{
     };
 }
 
-// UserList.propTypes={
-//     getUsers:PropTypes.func.isRequired,
-//     users:PropTypes.object.isRequired
-// };
-
 const mapStateToProps = (state)=>{
     return{
         users:state.users
