@@ -1,6 +1,7 @@
 import uuid from 'uuid'
 import axios from 'axios'
-const addAdvertistment = ({name='',contactNumber='',location='',title='',description='',images=[]}={})=>({
+
+const addAdvertisement = ({name='',contactNumber='',location='',title='',description='',images=[]}={})=>({
     type:'ADD_ADVERTISTMENT',
     add:{
         id:uuid(),
@@ -25,19 +26,18 @@ const deleteAdd=(({id}={})=>({
     
 }));
 
-const getAdvertistment=()=> dispatch =>{
+const getAdvertisement=()=> dispatch =>{
     console.log('get add called');
-    dispatch(setAdvertistmentLoading());
-    axios.get('/api/addvertistment').then(res=>dispatch({
+    dispatch(setAdvertisementLoading());
+    axios.get('/api/user/advertistment').then(res=>dispatch({
         type:'GET_ADVERTISTMENT',
         adds:res.data,
-        loading:false
     }));
 }
 
-const setAdvertistmentLoading = ()=>{
+const setAdvertisementLoading = ()=>{
     return{
         type:'ADVERTISTMENT_LOADING'
     }
 }
-export {addAdvertistment,editAdd,deleteAdd,getAdvertistment}
+export {addAdvertisement,editAdd,deleteAdd,getAdvertisement}

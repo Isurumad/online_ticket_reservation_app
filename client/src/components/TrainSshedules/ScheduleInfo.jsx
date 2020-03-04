@@ -1,7 +1,7 @@
 import React from 'react';
 import {
-  Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, ButtonToggle, Row,Col,FormGroup,Label,Input
+  Card, CardImg, CardBody,
+  CardTitle, CardSubtitle, Row
 } from 'reactstrap';
 import '../../css/scheduleInfo.css'
 import img from '../../images/train.jpg'

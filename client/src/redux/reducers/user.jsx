@@ -9,8 +9,9 @@ const userReducer = (state= userReducerDefaultStat,action)=>{
     switch(action.type){
         case 'GET_USERS':
             return{
+                ...state,
                 users:action.users,
-                loading:true
+                loading:false
             };
             
         case 'ADD_USER':

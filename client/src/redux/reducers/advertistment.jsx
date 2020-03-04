@@ -1,6 +1,6 @@
 
 const advertistmentReducerDefault={
-    adds:[],
+    advertisements:[],
     loading:false
 }
 
@@ -8,17 +8,28 @@ const addvertistmentReducer=(state=advertistmentReducerDefault,action)=>{
     switch(action.type){
         case 'GET_ADVERTISTMENT':
             return{
-                adds:action.adds,
-                loading:true
+                ...state,
+                advertistments:action.adds,
+                loading:false
             };
         
         case 'ADD_ADVERTISTMENT':
             return{
                 ...state,
-                adds:[action.adds,...state.adds]
+                advertistments:[action.adds,...state.advertistments]
             };
+        case 'ADVERTISTMENT_LOADING':
+            return{
+                ...state,
+                loading:true
+            }
 
         case 'REMOVE_ADVERTOSTMENT':
             return state.filter(({id})=>{return id!==action.id})
+        
+        default:
+            return state;    
     }
 }
+
+export default addvertistmentReducer

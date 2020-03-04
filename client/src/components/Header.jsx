@@ -50,7 +50,7 @@ const Header =(props)=>{
                                 OTHER
                         </DropdownItem>
                         <DropdownItem divider />
-                        <DropdownItem href='/advertistments'>
+                        <DropdownItem href='/advertisements'>
                             ALL SERVICES
                         </DropdownItem>
                     </DropdownMenu>

@@ -1,6 +1,7 @@
 import React from 'react'
-import { Col, Row, Button, Form, FormGroup,Input,Label} from 'reactstrap';
+import { Col, Row, Button, Form, FormGroup,Input} from 'reactstrap';
 import '../../css/signupForm.css'
+
 
 class SignupForm extends React.Component{
 constructor(props){
@@ -106,7 +107,7 @@ render(){
             </FormGroup>
             </Col>
         </Row>
-        <Row form>
+        {/* <Row form>
             <Col md={6}>
             <FormGroup check inline>
         <Label id='check-box' check>
@@ -140,7 +141,7 @@ render(){
                 <Input type="password" name="con-password" id="con-password" placeholder="Official Conatct Number" value={this.state.confirmPassword} onChange={this.onConfirmPasswordChange} />
             </FormGroup>
             </Col>
-        </Row>
+        </Row> */}
         {this.state.error && <p id='error'>{this.state.error}</p>}
         
         <Button id ='signup-button'>Sign up</Button>
@@ -151,4 +152,6 @@ render(){
     }
 }
 
-export default SignupForm
+
+
+export default(SignupForm);

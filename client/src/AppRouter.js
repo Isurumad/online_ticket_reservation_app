@@ -9,6 +9,7 @@ import Header from './components/Header'
 import Schedule from './components/TrainSshedules/Schedule'
 import ScheduleInfo from './components/TrainSshedules/ScheduleInfo'
 import AddForm from './components/createAdvertistment/AddForm'
+import AdvertisementList from './components/createAdvertistment/AdvertistmentList'
 
 const AppRouter= () =>(
     <BrowserRouter>
@@ -21,6 +22,8 @@ const AppRouter= () =>(
                 <Route path='/schedules' exact={true} component={Schedule}/>
                 <Route path='/scheduleinfo' extact={true} component={ScheduleInfo}/>
                 <Route path='/addForm' extact={true} component={AddForm}/>
+                <Route path='/advertisements' extact={true} component={AdvertisementList}/>
+
 
             </Switch>
         </div>
