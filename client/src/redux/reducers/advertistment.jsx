@@ -1,6 +1,12 @@
+import uuid from 'uuid';
+import IMG1 from '../../images/van1.jpg'
+import IMG2 from '../../images/van2.jpg'
 
 const advertistmentReducerDefault={
-    advertisements:[],
+    advertisements:[{id:uuid(),title:'TOHOYOTA HIACE VAN FOR HIRE',image:IMG1,price:'26000.00',contactNumber:'0773101655',description:"Confirtable Seats Good Condition Friendly Service"},
+                    {id:uuid(),title:'TOHOYOTA HIACE VAN FOR HIRE',image:IMG2,price:'36000.00',contactNumber:'0718918597',description:"Confirtable Seats Good Condition Friendly Service"}
+
+                    ],
     loading:false
 }
 

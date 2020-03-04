@@ -1,7 +1,7 @@
 
 
 const getVisibleSchedules = (schedules,{arrival,destination,arrivalTime,destinationTime,name,trainType})=>{
-      return schedules.filter((schedule)=>{
+      return schedules.schedules.filter((schedule)=>{
         const arrivalMatch = schedule.arrival.toLowerCase().includes(arrival.toLowerCase());
         const destinationMatch = schedule.destination.toLowerCase().includes(destination.toLowerCase());
         const arrivalTimeMatch = schedule.arrivalTime.toLowerCase().includes(arrivalTime.toLowerCase());

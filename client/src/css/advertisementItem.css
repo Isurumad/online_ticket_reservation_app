@@ -1,0 +1,29 @@
+#add-body{
+ background-color: rgba(31, 30, 30, 0.692);
+}
+#add-card{
+    margin-top:30px;
+    margin-left:50px;
+    margin-right:50px;
+    background-color: rgb(31, 31, 30);
+    align-items: center;
+}
+#card-description{
+    color: lavender;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#price-btn{
+    display: grid;
+    border:none;
+    grid-template-columns: 50% 50%;
+    width:80%;
+    border-radius: 0.4em;
+}
+
+#card-title{
+    color:white;
+    font-family: fantasy;
+}

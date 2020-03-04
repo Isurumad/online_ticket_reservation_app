@@ -2,7 +2,7 @@ import React from 'react'
 import AdvertisementItem from './AdevrtistmentItem'
 import {connect} from 'react-redux';
 import {getAdvertisement} from '../../redux/action/advertistment'
-
+import '../../css/advertisementItem.css'
 class AdvertisementList extends React.Component{
     componentDidMount(){
         this.props.getAdvertisement();
@@ -10,7 +10,7 @@ class AdvertisementList extends React.Component{
 
     render(){
         return(
-            <div>
+            <div id='add-body'>
          
             {this.props.advertisements.advertisements.map((add)=>
                 <AdvertisementItem add={add} key={add._id}/>
@@ -19,11 +19,6 @@ class AdvertisementList extends React.Component{
         )
     }
 }
-
-// AdvertisementList.propTypes={
-//     getAdvertisement:PropTypes.func.isRequired,
-//     advertisements:PropTypes.object.isRequired
-// }
 
 const mapStateToProps =(state)=>{
     return{
